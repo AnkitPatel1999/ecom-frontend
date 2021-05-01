@@ -61,6 +61,8 @@ const Menu = ({ history }) => (
                     </span>
                 </li>
             )}
+            <li className="nav-item x"> <span className="nav-link text-secondary">Created By : Ankit Patel </span></li>
+            <li className="nav-item x"> <span className="nav-link text-secondary">Follow me on LinkedIn : <a href="https://www.linkedin.com/in/ankitpatel1999/">Visit My Profile</a></span> </li>
         </ul>
     </div>
 )
