@@ -11,7 +11,6 @@
     const [success, setSuccess] = useState(false);
 
     const { user, token } = isAuthenticated();
-
     const goBack = () => {
         return (
             <div className="mt-5">
@@ -29,7 +28,8 @@
         event.preventDefault();
         setError("");
         setSuccess(false);
-        
+        console.log(user._id)
+
         createCategory(user._id, token, { name })
             .then( data => {
                 console.log(data)

@@ -3,7 +3,7 @@ import { API } from "../../backend";
 //CREATE CATEGORY CALL
 
 export const createCategory = (userId, token, category) => {
-    return fetch(`${API}category/create/${userId}`, {
+    return fetch(`${API}/category/create/${userId}`, {
         method: "POST",
         headers: {
             Accept: "applocation/json",
@@ -15,7 +15,7 @@ export const createCategory = (userId, token, category) => {
     .then( response => {
         return response.json();
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log("creat cat err "+err+" "+userId+" "+token+" "+category.name));
 }
 
 //get all category
